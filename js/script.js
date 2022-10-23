@@ -1,5 +1,5 @@
 const 
-    cursor = document.getElementById('cursor'),
+    // cursor = document.getElementById('cursor'),
     time = document.getElementById('time')
 let 
     sticky__items = document.getElementById('sticky__items'),
@@ -22,9 +22,9 @@ window.addEventListener('scroll', (e) => {
     }
 })
 
-document.addEventListener('mousemove', (e) => {
-    cursor.setAttribute("style", `top:${e.pageY-10}px; left:${e.pageX-10}px`)
-})
+// document.addEventListener('mousemove', (e) => {
+//     cursor.setAttribute("style", `top:${e.pageY-10}px; left:${e.pageX-10}px`)
+// })
 // //Selecting Elements
 // let sticky = document.querySelector('.sticky');
 // let stickyParent = document.querySelector('.sticky-parent');
