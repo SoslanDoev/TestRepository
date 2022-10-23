@@ -151,12 +151,13 @@ a {
     /* left: calc(var(--scrollTop) /1.6); */
     left: 50%;
     /* transform: translateX(-50%) translate3d(50%, calc(var(--scrollTop)/1.6), 0); */
-    transform: translate3d(calc(-50% + var(--scrollTop)), calc(var(--scrollTop)/1), 0);
-    width: 50vh;
-    height: 50%;
+    transform: translate3d(calc(-50% + var(--scrollTop)/5), calc(var(--scrollTop)/1), 0);
+    width: 50vw;
+    /* height: 50%; */
     /* height: 250px; */
     background-size: cover;
     z-index: 35;
+    background-size: contain;
 }
 
 .layers__nord1, 
@@ -310,16 +311,68 @@ a {
 }
 */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     /* layers */
+        .layers__moon {
+            /* width: 27%; */
+        }
         .layers__nord1 {
+
+        }
+        .layers__nord1, .layers__nord2 {
+            height: 50vh;
+            bottom: 170px;
+        }
+        .layers__bottom2 {
+            height: 50vh;
+            bottom: 0;
+        }
+        .layers__bottom1 {
+            height: 30vh;
+            height: 240px;
         }
     /* layers */
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     /* layers */
-        .layers__nord1 {
+        .layers__moon {
+            width: 30vw;
         }
-    /* layers__end */
+        .layers__nord1, .layers__nord2 {
+            height: 35vh;
+        }
+        .layers__bottom2 {
+            height: 40vh;
+        }
+        .layers__bottom1 {
+            height: 30vh;
+            height: 240px;
+        }
+    /* layers */
+}
+
+@media screen and (max-width: 500px) {
+    /* layers */
+        .layers {
+            min-height: 80vh;
+        }
+        .layers__moon {
+            width: 30vw;
+        }
+        .layers__nord1 {
+            left: -250px;
+            width: 150%;
+        }
+        .layers__nord1, .layers__nord2 {
+            height: 35vh;
+        }
+        .layers__bottom2 {
+            height: 40vh;
+        }
+        .layers__bottom1 {
+            height: 30vh;
+            height: 240px;
+        }
+    /* layers */
 }
