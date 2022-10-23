@@ -162,7 +162,7 @@ a {
 
 .layers__nord1, 
 .layers__nord2 {
-    height: 90vh;
+    height: 75vh;
     background-size: cover;
     z-index: 40;
     bottom: -50px;
@@ -339,6 +339,10 @@ a {
         .layers__moon {
             width: 30vw;
         }
+        .layers__nord1 {
+            left: -260px;
+            width: 175%;
+        }
         .layers__nord1, .layers__nord2 {
             height: 50vh;
         }
@@ -361,11 +365,15 @@ a {
             width: 30vw;
         }
         .layers__nord1 {
-            left: -250px;
-            width: 150%;
+            /* left: -150px; */
+        }
+        .layers__nord2 {
+            /* width: 175%; */
         }
         .layers__nord1, .layers__nord2 {
-            height: 35vh;
+            width: 110vh;
+            left: -350px;
+            /* height: 35vh; */
         }
         .layers__bottom2 {
             height: 40vh;
