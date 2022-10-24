@@ -31,7 +31,8 @@ html {
 }
 
 body {
-    background-color: var(--clr-black);
+    /* background-color: var(--clr-black); */
+    background-color: var(--clr-violet);
     color: var(--clr-white);
 }
 
@@ -254,11 +255,12 @@ a {
     top: 0;
     overflow: hidden;
     display: flex;
+    padding: 50px 50px 0; 
 }
 
 .sticky__item {
     min-height: 100vh;
-    min-width: 50vw;
+    min-width: 100%;
     background-color: var(--clr-sticky);
     background-size: cover;
     background-repeat: no-repeat;

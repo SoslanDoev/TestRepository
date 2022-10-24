@@ -15,6 +15,6 @@ window.addEventListener('scroll', (e) => {
     let sticky__position = sticky__items.getBoundingClientRect().top
     if (sticky__position > 1) { return } else {
         let scrolled = sticky__inner.getBoundingClientRect().top
-        sticky__items.scrollLeft = (scroll__width / vertical__scroll__height) * (-scrolled) / 0.85 
+        sticky__items.scrollLeft = (scroll__width / vertical__scroll__height) * (-scrolled) / 0.90
     }
 })
