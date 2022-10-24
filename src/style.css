@@ -247,15 +247,20 @@ a {
 /* sticky */
 
 .sticky__inner {
-    min-height: 250vh;
+    min-height: 600vh;
 }
 
 .sticky__items {
     position: sticky;
     top: 0;
-    overflow: hidden;
+    overflow-x: hidden;    
     display: flex;
-    padding: 50px 50px 0; 
+    /* padding: 50px 50px 0;  */
+    padding: 50px 10px 0;
+}
+
+.text {
+    max-width: 80%;
 }
 
 .sticky__item {
