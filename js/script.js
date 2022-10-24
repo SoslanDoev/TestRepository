@@ -8,16 +8,20 @@ let
     scrolled = 0,
     scroll__top = 0
 window.addEventListener('scroll', (e) => {
+    net()
+    da()
+})
+function net() {
     /*Параллакс эффект*/
     scroll__top = this.scrollY
-    if (scroll__top > window.screen.height) { 
-        document.body.style.cssText = `--scrollTop: ${0}px`
-     } else {
+    if (scroll__top > window.screen.height) { return} else {
         document.body.style.cssText = `--scrollTop: ${scroll__top}px`
     }
+}
+function da() {
     sticky__position = sticky__items.getBoundingClientRect().top
     if (sticky__position > 1) { return } else {
         scrolled = sticky__inner.getBoundingClientRect().top
         sticky__items.scrollLeft = (scroll__width / vertical__scroll__height) * (-scrolled) / 0.90
     }
-})
+}
