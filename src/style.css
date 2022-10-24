@@ -247,7 +247,7 @@ a {
 /* sticky */
 
 .sticky__inner {
-    min-height: 600vh;
+    min-height: 550vh;
 }
 
 .sticky__items {
@@ -271,6 +271,7 @@ a {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    overflow-y: auto;
 }
 
 /* sticky__end */
