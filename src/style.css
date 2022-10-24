@@ -356,6 +356,11 @@ a {
             height: 200px;
         }
     /* layers */
+    /* sticky */
+        .sticky__item {
+            min-width: 100%;
+        }
+    /* sticky__end */
 }
 
 @media screen and (max-width: 500px) {
